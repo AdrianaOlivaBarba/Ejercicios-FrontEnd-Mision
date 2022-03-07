@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos compuestos HTML</title>
+</head>
+<body>
+
+    <h1>Elementos compuestos LaunchX</h1>
+    <h2>Input de Texto</h2>
+
+    <!-- Labels / Etiquetas -->
+    <label for="Input1"> Input de Texto:</label>
+    <!-- Entradas / Inputs -->
+    <input type="text" id="Input1" name="Input">
+    <br><br>
+
+    <label for="Input2"> Escribe aqui abajo:</label>
+    <br>
+    <input type="text" id="Input2" name="Input2">
+    <br><br>
+
+    <hr>
+    <!-- Tipos de Inputs -->
+    <h2>Input para formulario</h2>
+    <label for="correo1">Correo:</label><br>
+    <input type="email" id="correo1" name="correo1"><br><br>
+
+    <label for="correo2">Correo alternativo:</label><br>
+    <input type="email" id="correo2" name="correo2"><br><br>
+    
+    <label for="numero1">Edad:</label><br>
+    <input type="number" id="numero1" name="numero1"><br><br>
+
+    <label for="psw1">Contraseña:</label><br>
+    <input type="password" id="psw1" name="psw1"><br><br>
+    
+    <label for="tel1">Número de teléfono célular:</label><br>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+
+    <label for="tel1">Número de teléfono de casa:</label><br>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+    
+    <label for="url1">URL de tu perfil en GitHub:</label><br>
+    <input type="url" id="url1" name="url1"><br><br>
+
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form> <br>
+    
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" form="form1">
+
+    <hr>
+
+    <h2>Input de selección multiple</h2>
+    <p>Selecciona los helados que más te gustan:</p>
+    <input type="checkbox" id="topping1" name="topping1" value="Fresa">
+    <label for="topping1">Helado de fresa</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Limón">
+    <label for="topping2">Helado de limón</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Vainilla">
+    <label for="topping3">Helado de vainilla</label><br>
+    
+    <h2>Input de selección única</h2>
+    <p>Selecciona tú color faorito:</p>
+    <input type="radio" id="rosa" name="color" value="Rosa">
+    <label for="roja">Rosa</label><br>
+    <input type="radio" id="verde" name="color" value="Verde">
+    <label for="verde">Verde</label><br>
+    <input type="radio" id="azul" name="color" value="Azul">
+    <label for="guacamole">Azul</label><br><br>
+
+    <h2>Selecciona</h2>
+    <label for="Helado">De que quiere su helado</label>
+    <select id="helado" name="helados">
+        <option value="fresa">Fresa</option>
+        <option value="limón">Limón</option>
+        <option value="vainilla">Vainilla</option>
+    </select>
+    
+    <h2>Select con Input</h2>
+    <label for="refresco">Elige tu refresco favorito</label><br>
+    <input list="refresco">
+    <datalist id="refresco">
+        <option value="Coca-Cola">
+        <option value="Manzana">
+        <option value="Naranja">
+        <option value="Mango">
+        <option value="Guayaba">
+    </datalist>
+    <br><br>
+
+    <hr>
+    
+    <h2>Input de Fecha</h2><br>
+    <input type="date" id="fecha1" name="fecha1"><br>
+    <input type="datetime-local" id="fecha2" name="fecha2"><br>
+    <input type="week" id="fecha3" name="fecha3"><br>
+    <input type="time" id="fecha4" name="fecha4"><br>
+    <input type="month" id="fecha5" name="fecha5"><br><br>
+    
+    <hr>
+
+    <h2>Input de Fecha</h2><br>
+    <input type="date" id="fecha1" name="fecha1"><br>
+    <input type="datetime-local" id="fecha2" name="fecha2"><br>
+    <input type="week" id="fecha3" name="fecha3"><br>
+    <input type="time" id="fecha4" name="fecha4"><br>
+    <input type="month" id="fecha5" name="fecha5"><br><br>
+    
+    <hr>
+    
+    <h2>Input de archivo</h2><br>
+    <p>Subir solo un archivo</p>
+    <input type="file" id="archivo1" name="archivo1"><br><br>
+    <p>Subir varios archivos</p>
+    <input type="file" id="archivo2" name="archivo2" multiple><br><br>
+    
+    <h2>Input de Color</h2><br>
+    <input type="color" id="color1" name="color1"><br><br>
+    
+    <h2>Input de Rango</h2>
+    <label for="vol">Volumen (entre 0 y 50):</label><br>
+    <input type="range" id="vol" name="vol" min="0" max="50"><br>
+    
+    <hr>
+    
+    <h2>Input de botón</h2>
+    <input type="reset"><br>
+    <input type="submit"><br>
+    <input type="button" id="boton1" name="boton1" value="Botón 1" onclick="alert('Bienvenidos explorers');"><br><br>
+    
+</body>
+</html>
